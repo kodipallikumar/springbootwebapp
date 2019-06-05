@@ -27,7 +27,7 @@ steps{
          stage ('deploy'){
         steps{
             echo "Maven deploy Started"
-                bat 'copy target\\*.war C:\\Installables\\Tomcat8\\apache-tomcat-8.5.41\\webapps\\'
+                bat 'copy target\\*.jar C:\\Installables\\Tomcat8\\apache-tomcat-8.5.41\\webapps\\'
            echo "Maven deploy Completed"
             
             }
