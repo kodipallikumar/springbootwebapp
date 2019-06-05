@@ -37,5 +37,10 @@ steps{
 
         
 }
+    post {
+        always {
+            emailext mail bcc: '', body: '', cc: '', from: '', replyTo: '', subject: 'jenkinsPipeline Status', to: 'kodipallikumar@gmail.com'
+        }
+    }
 }
 
