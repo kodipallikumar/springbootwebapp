@@ -35,7 +35,7 @@ steps{
 }
     post {
         always {
-            mail bcc: '', body: 'This is a test email for notification', cc: '', from: '', replyTo: '', subject: 'jenkinsPipeline Status', to: 'kodipallikumar@gmail.com'
+            mail bcc: '', body: 'This is a test email for notification', cc: '', from: '', replyTo: '', subject: 'jenkinsPipeline Status', to: 'kishore.kodipalli@mphasis.com'
         }
     }
 }
