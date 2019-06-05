@@ -29,17 +29,13 @@ steps{
             echo "Maven deploy Started"
                 bat 'copy target\\*.jar C:\\Installables\\Tomcat8\\apache-tomcat-8.5.41\\webapps\\'
            echo "Maven deploy Completed"
-            
-            }
-
+              }
  }
-
-
-        
+   
 }
     post {
         always {
-            emailext mail bcc: '', body: '', cc: '', from: '', replyTo: '', subject: 'jenkinsPipeline Status', to: 'kodipallikumar@gmail.com'
+            mail bcc: '', body: '', cc: '', from: '', replyTo: '', subject: 'jenkinsPipeline Status', to: 'kodipallikumar@gmail.com'
         }
     }
 }
